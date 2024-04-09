@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./cropimage.css" type="text/css">
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./cropimage.test.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        #result-crop {
+           padding-left: 400px;
+           padding-top: 600px;
+        }
+        #result-resize {
+           position: absolute;
+           width: 62%;
+           height: 85%;
+           left: 34%;
+           top: 5%;
+           padding-left: 0px; /* Adjust padding as needed */
+           padding-top: 0px; /* Adjust padding as needed */
+           box-shadow: 0 0 8px 2px rgba(100, 100, 100, .4);
+        }
+
+        /* Hide the move-stats and contain divs by default */
+        #move-stats, #contain {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="move-stats" style="position: absolute; left: 2%; top: 5%; padding: 5px; box-shadow: 0 0 4px 1px rgba(100, 100, 100, .4); font-family: tahoma; font-size: 12px;"></div>
+    <div id="contain" style="position: absolute; width: 62%; height: 85%; left: 34%; top: 5%; box-shadow: 0 0 8px 2px rgba(100, 100, 100, .4);"></div>
+    
+    <input type="file" id="image-input"> <!-- Input element for uploading image -->
+    <button id="btn-cropper-done" class="btn-cropper-done">Crop</button>
+  
+    <button id="btn-done" >done</button> 
+
+    <div id="result-crop" class="btn-done"></div>
+   
+
+  
+</body>
+</html>
